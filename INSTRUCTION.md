@@ -27,7 +27,7 @@ kubectl apply -f .infrastructure/busybox.yml
 1. To test ClusterIp with busybox.
 
     ```bash
-    kubectl exec busybox -n todoapp -- curl todoapp-clusterip.todoapp.svc.cluster.local
+    kubectl exec busybox -n todoapp -- curl http://todoapp-clusterip.todoapp.svc.cluster.local
     ```
 
 1. To test NodePort service follow [app link](http://127.0.0.1:30007/)
