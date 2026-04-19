@@ -2,7 +2,29 @@
 
 simple todo app
 
-## Installation
+## Local Django setup
+
+Try it out by installing the requirements (the following commands work only with Python 3.8 and higher, due to Django 4):
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a database schema:
+
+```bash
+python manage.py migrate
+```
+
+And then start the server (default is http://localhost:8000):
+
+```bash
+python manage.py runserver
+```
+
+You can now browse the [API](http://localhost:8000/api/) or start on the [landing page](http://localhost:8000/).
+
+## Installation in k8s
 
 to install app firstly apply all manifests.
 
